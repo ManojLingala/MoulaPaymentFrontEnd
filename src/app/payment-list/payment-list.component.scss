@@ -1,0 +1,86 @@
+.layout-container {
+    max-width: 1140px;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.product-grid {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+
+.customerinfo{
+    margin-top:20px;
+    margin-bottom:20px;
+    color:black;
+}
+
+// .product-container {
+//     position: relative;
+//     background: white;
+//     border: black;
+// }
+.product-details {
+    padding-top: 15px;
+    width:800px;
+    //text-align: center;
+    margin-bottom: 40px;
+    background: #c9c7c7;
+    
+}
+.product-brand {
+    display: block;
+    margin: .5em 0;
+    color: #070707;
+    font-family: "Arial, Helvetica, sans-serif" ;
+    margin-left: 15px;
+    
+}
+
+.product-title {
+    //text-transform: uppercase;
+    letter-spacing: .05em;
+    margin-top: 0;
+    margin-bottom: .5em;
+    font-size: 1em;
+    line-height: 1.2;
+    font-weight: 400;
+    font-family: "Arial, Helvetica, sans-serif" ;
+    margin-left: 15px;
+}
+.product-price {
+    font-size: 1.14286em;
+    color: #080808;
+    font-family: "Arial, Helvetica, sans-serif" ;
+    margin-left: 15px;
+}
+.button-action {
+    font-size: 1.14286em;
+    color: #080808;
+    font-family: "Arial, Helvetica, sans-serif" ;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.process-button {
+    text-transform: uppercase;
+    //float: right;
+    margin-bottom: 20px;
+    //display: block;
+    width: 125px;
+    //height: 45px;
+    background: rgb(1, 26, 32);
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+.payment-header {
+    padding-top: 10px;
+    text-align: center;
+    margin-top: 40px;
+    background: #c9c7c7;
+    
+}

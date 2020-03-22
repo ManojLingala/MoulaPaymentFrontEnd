@@ -1,0 +1,73 @@
+// .delivery-form{
+//     margin-top: 3px;
+//     //float: right;
+   
+//     margin-left:20%;
+    
+// }
+
+// input[type=text]{
+//     padding: 7px;
+//     //border: none;
+//     height:20px;
+//     font-size: 10px;
+//     width: 50%;
+//     font-family: sans-serif;
+//     }
+.container {
+    width: 300px;
+    clear: both;
+  }
+  
+  .container input {
+    width: 100%;
+    clear: both;
+    margin-bottom: 4px;
+  }
+
+#modal-content-wrapper {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    color: white;
+
+}
+
+#modal-title {
+    font-size: 15px;
+    color: black;
+    margin-top: 20px;
+    margin-left: 20px;
+    align-self: center;
+}
+
+#modal-footer {
+    justify-self: right;
+    align-self: center;
+}
+
+#modal-action-button {
+    margin-right: 30px;
+    background-color:black;
+    color: white;
+}
+
+#modal-cancel-button {
+    background-color: black;
+    color: white;
+}
+.invalid-feedback{
+    color: red;;
+}
+.customerinfo{
+    margin-top:20px;
+    margin-bottom:20px;
+    color:black;
+}
+.create-payment {
+    padding-top: 10px;
+    //text-align: center;
+    margin-top: 40px;
+    background: #c9c7c7;
+    
+}

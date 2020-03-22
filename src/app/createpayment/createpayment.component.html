@@ -1,0 +1,45 @@
+
+<div id="modal-content-wrapper">
+    <header class ="create-payment" id="modal-header">
+        <h1 id="modal-title">Provide payment details: </h1>
+    </header>
+    <div class="customerinfo">
+        <div><strong>Customer: </strong> {{customerInfo.name}}</div>
+        <div><strong>Available Balance: </strong> {{customerInfo.balance}}</div>
+    </div>
+    
+    
+    <div class="container">
+    <form [formGroup]="paymentForm" (ngSubmit)="createPayment()">
+                    <div class="form-group">
+                        <label style="color: black;">Amount</label>
+                        <input type="text" formControlName="amount" placeholder="0.00" [ngModel]="amount" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.amount.errors }" />
+                        <div *ngIf="submitted && f.amount.errors" class="invalid-feedback">
+                            <div *ngIf="f.amount.errors.required">Amount is required</div>
+                            <div *ngIf="f.amount.errors.pattern">Invalid amount</div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="form-group">
+                        <label style="color: black;">Date</label>
+                        <input type="date" formControlName="date" [ngModel]="date"  class="form-control" [ngClass]="{ 'is-invalid': submitted && f.date.errors }" />
+                        <div *ngIf="submitted && f.date.errors" class="invalid-feedback">
+                            <div *ngIf="f.date.errors.required">Date is required</div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <footer id="modal-footer">
+                            <button mat-raised-button id="modal-action-button" >
+                               Create
+                            </button>
+                            
+                        </footer>
+                    </div>
+                </form>
+</div>
+        
+    
+</div>

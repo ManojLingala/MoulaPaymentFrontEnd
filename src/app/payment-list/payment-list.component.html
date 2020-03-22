@@ -1,0 +1,40 @@
+<div class="payment-header">
+    <h3>Payment List</h3>
+</div>
+<div class="customerinfo">
+    <div><strong>Customer: </strong> {{customerInfo.name}}</div>
+    <div><strong>Available Balance: </strong> {{customerInfo.balance}}</div>
+</div>
+    <div class="layout-container">
+        <div class="product-grid">
+                  
+                    <div  *ngFor="let payment of payments;let i = index" class="'col-xs-12 col-sm-12 col-md-4 col-lg-4'" >
+                        <div class="row">
+                            <div class="product-container">
+                                <div class="product-details">
+                                    <div class="product-brand"><strong>Payment ID:    </strong>{{payment.id}}</div>
+                                    <div class="product-brand"><strong>Payment Amount:    </strong>{{payment.amount}}</div>
+                                    <div class="product-brand"><strong>Payment Date:      </strong>{{payment.date | date}}</div>
+                                    <div class="product-brand"><strong>Status:            </strong>{{payment.status}}</div>
+                                    <div class="product-brand"><strong>Comment:           </strong>{{payment.reason}}</div>  
+                                    <div class="button-action">
+                                    <button class="process-button" *ngIf="payment.status!='Cancelled' && payment.status!='Closed' && payment.status!='Processed'" id="modal-action-button" (click)="processPayments(payment)" >
+                                        Process
+                                    </button>
+                                    <button class="process-button" *ngIf="payment.status!='Cancelled' && payment.status!='Closed' && payment.status!='Processed'" id="modal-cancel-button"  (click)="cancelPayments(payment)">
+                                        Cancel
+                                    </button>   
+                                    </div>                             
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                <!-- <div class="row">  
+                    <div *ngFor="let product of products;let i = index;" [ngClass]="{'col-xs-4 col-sm-4 col-md-4 col-lg-4': product.rowtype == 'three-view', 'col-xs-6 col-sm-6 col-md-6 col-lg-6': product.rowtype == 'two-view',  'col-xs-12 col-sm-12 col-md-12 col-lg-12': product.rowtype == 'one-view'}"
+                         style="text-align:center; background-color:rgb(0, 183, 255);">{{product.brand}}
+                    </div>
+                    
+                </div> -->
+        </div>
+    </div>
