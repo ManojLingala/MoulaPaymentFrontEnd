@@ -2,7 +2,7 @@
 
 PaymentAPP FrontEnd
 
-Run the server side code and configure the api_URL in environment.ts (front end code)
+Run the server side code(MoulaTechnicalAssessment) and configure the api_URL in environment.ts (front end code)
 
 Go to the solution folder 
 
